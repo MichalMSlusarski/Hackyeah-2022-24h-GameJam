@@ -6,18 +6,16 @@ public class TileCard : MonoBehaviour
 {
     string defaultTag = "Card";
     string selectedTag = "SelectedCard";
-    float desiredSize = 1.15f;
+    float desiredSize = 2.2f;
     float lerpTime = 0.4f;
-    float initialScale = 1f;
+    float initialScale = 2f;
     bool isSelected = false;
 
-    [SerializeField] SO_Integer currentMoney;
     [SerializeField] int thisBuildingIndex;
     [SerializeField] int price;
     [SerializeField] SO_Integer currentBuildingIndex;
     [SerializeField] SO_Bool isBuildMode;
-    [SerializeField] GameObject icons;
-    [SerializeField] GameObject grayout;
+
     [SerializeField] ClickOnTile clickOnTile;
     [SerializeField] SO_Integer currentPrice;
 
@@ -26,39 +24,19 @@ public class TileCard : MonoBehaviour
     void Awake()
     {
         thisCardName = gameObject.name;
-        grayout.SetActive(true);
-        icons.SetActive(false);
+
     }
 
     void Start()
     {
         ClickOnTile.OnCard += Deselect;       
-        ClickOnTile.OnCard += AffordCheck;
-    }
-
-    void Update()
-    {
-        AffordCheck();
-    }
-
-    void AffordCheck()
-    {
-        if(CanAfford())
-        {
-            grayout.SetActive(false);
-        }
-        else
-        {
-            grayout.SetActive(true);
-        }
+        //ClickOnTile.OnCard += AffordCheck;
     }
     
     public void Selected()
     {
-        if(CanAfford())
-        {
             ClearSelection(thisCardName);
-            icons.SetActive(true);
+
             isSelected = true;
             Debug.Log("Selected");
             gameObject.transform.tag = selectedTag;
@@ -70,7 +48,6 @@ public class TileCard : MonoBehaviour
             {
             isBuildMode.boolvalue = true;
             }); 
-        }
     }
 
     void ClearSelection(string name)
@@ -106,31 +83,19 @@ public class TileCard : MonoBehaviour
     {
         clickOnTile.DestroyFollower(); //+ destroyMock
         clickOnTile.DestroyMock();
-        icons.SetActive(true);
+
         gameObject.transform.DOScale(desiredSize, lerpTime);
     }
 
     public void Exit()
     {
-        if(isSelected == false) {gameObject.transform.DOScale(initialScale, lerpTime); icons.SetActive(false);}
-    }
-
-    bool CanAfford()
-    {
-        if(currentMoney.Integer >= price)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        if(isSelected == false) {gameObject.transform.DOScale(initialScale, lerpTime);}
     }
 
     void OnDestroy()
     {
         ClickOnTile.OnCard -= Deselect;
-        ClickOnTile.OnCard -= AffordCheck;
+        //ClickOnTile.OnCard -= AffordCheck;
         DOTween.KillAll();
     }
 }

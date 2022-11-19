@@ -171,7 +171,7 @@ public class ClickOnTile : MonoBehaviour
     void InstantiatePrefab(Quaternion rotation, bool isBuilding)
     {
         Building = Instantiate(allPossibleBuildings[CurrentBuildingIndex.Integer], selectedTile.transform.position, rotation) as GameObject; //Euler(0, RandomRotationValue(), 0)Quaternion.identity
-        if(isBuilding == true) {Building.GetComponent<ParticleSystem>().Play();}
+        //if(isBuilding == true) //{//Building.GetComponent<ParticleSystem>().Play();}
         //Building.transform.SetParent(selectedTile.transform);
     }
 

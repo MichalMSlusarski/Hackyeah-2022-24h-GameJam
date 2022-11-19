@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e78565afaa5030a45b04d1fecde6cf71, type: 3}
   m_Name: CurrentPrice
   m_EditorClassIdentifier: 
-  Integer: 0
+  Integer: -1
   valueChanged: 0
