@@ -9,7 +9,7 @@ public class ClickOnTile : MonoBehaviour
     
     [SerializeField] LayerMask layerMask;
     [SerializeField] LayerMask ignoreLayer;
-    [SerializeField] MapManager mapManager;
+    //[SerializeField] MapManager mapManager;
     //[SerializeField] TouchInput touchInput;
     [SerializeField] CameraControlNet cameraControl;
 
@@ -135,7 +135,7 @@ public class ClickOnTile : MonoBehaviour
             Debug.Log("Should place");
             InstantiatePrefab(Quaternion.Euler(0, RandomRotationValue(), 0), true);
             OnGetMouseButtonDown(false);
-            mapManager.allPositions.Add(selectedTile.transform.position);
+            //mapManager.allPositions.Add(selectedTile.transform.position);
             DestroyMock();
             Destroy(selectedTile);
             //cameraControl.enabled = true; //mobile

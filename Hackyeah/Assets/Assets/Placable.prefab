@@ -454,7 +454,6 @@ GameObject:
   - component: {fileID: 2888465488727352062}
   - component: {fileID: 3854477004269702633}
   - component: {fileID: 1592424369899572666}
-  - component: {fileID: 4134520595887680535}
   m_Layer: 0
   m_Name: Placable
   m_TagString: Placable
@@ -5388,16 +5387,3 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &4134520595887680535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8734987110973030721}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fcff5cca9c59394e8134f3f86b35bb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objects: []

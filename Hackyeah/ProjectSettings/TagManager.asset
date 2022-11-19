@@ -9,6 +9,7 @@ TagManager:
   - Forest
   - Placable
   - Card
+  - SelectedCard
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - 
   - Arena
   - Tiles
-  - 
+  - Reset
   - 
   - 
   - 

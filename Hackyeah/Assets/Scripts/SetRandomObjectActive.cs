@@ -4,12 +4,13 @@ public class SetRandomObjectActive : MonoBehaviour
 {
     [SerializeField] GameObject[] objects;
     int randomIndex = 0;
-    GainCalculator gainCalculator = null;
+    //GainCalculator gainCalculator = null;
 
     void Start()
     {
-        gainCalculator = gameObject.GetComponent<GainCalculator>();
-        if(gainCalculator.enabled == false) {Set();}
+        //gainCalculator = gameObject.GetComponent<GainCalculator>();
+        //if(gainCalculator.enabled == false) {Set();}
+        Set();
     }
 
     void Set()
