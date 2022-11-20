@@ -437,7 +437,7 @@ MonoBehaviour:
   villagePoints: {fileID: 11400000, guid: 1b4060919e6e2ac42ad3a71917060cfa, type: 2}
   productPoints: {fileID: 11400000, guid: 85799b16f2616274eb7a5b612f2a90ec, type: 2}
   currentPrice: {fileID: 11400000, guid: 82bb269792d83ce4ead3f9cecddd2f66, type: 2}
-  bonusValue: 1
+  bonusValue: 5
 --- !u!1 &7260805196494815833
 GameObject:
   m_ObjectHideFlags: 0

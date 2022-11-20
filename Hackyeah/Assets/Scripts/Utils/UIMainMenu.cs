@@ -6,24 +6,8 @@ using UnityEngine.UI;
 
 public class UIMainMenu : MonoBehaviour
 {
-    [SerializeField] SO_Integer sceneToLoad;
-    [SerializeField] int desiredNextSceneIndex;
    // [SerializeField] AudioSource audioSource;
     
-    public void LoadNextScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    public void LoadNextSceneAtIndex()
-    {
-        SceneManager.LoadScene(sceneToLoad.Integer, LoadSceneMode.Single);
-    }
-
-    public void SetNextSceneIndexTo()
-    {
-        sceneToLoad.Integer = desiredNextSceneIndex;
-    }
 
     public void QuitGame()
     {
@@ -41,10 +25,5 @@ public class UIMainMenu : MonoBehaviour
         Outline outline = this.gameObject.GetComponent<Outline>();
         //if(outline != null)
         outline.enabled = false ? outline.enabled = true : outline.enabled = false;  
-    }
-
-    public void PlayClickSound()
-    {
-
     }
 }

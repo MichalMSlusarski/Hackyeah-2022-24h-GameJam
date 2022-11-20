@@ -15,6 +15,7 @@ public class SlideToPoint : MonoBehaviour
     void Start()
     {
         slider = gameObject.GetComponent<Slider>();
+        slider.value = 0;
     }
 
     void Update()

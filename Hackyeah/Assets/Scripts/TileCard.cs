@@ -80,7 +80,7 @@ public class TileCard : MonoBehaviour
 
     public void Enter()
     {
-        clickOnTile.DestroyMock();
+//        clickOnTile.DestroyMock();
 
         gameObject.transform.DOScale(desiredSize, lerpTime);
     }
