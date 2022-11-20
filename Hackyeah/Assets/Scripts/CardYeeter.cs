@@ -25,7 +25,7 @@ public class CardYeeter : MonoBehaviour
         activeChoices[0].SetActive(false);
         activeChoices.RemoveAt(0);
 
-        if(turn >= 4)
+        if(turn >= 3)
         {
             EventMe();
         }
@@ -36,10 +36,12 @@ public class CardYeeter : MonoBehaviour
         if(panPlebanScore.Integer >= 0)
         {
             PanEventList[0].SetActive(true);
+            turn = 0;
         }
         else
         {
             PlebanEventList[0].SetActive(true);
+            turn = 0;
         }
     }
 
