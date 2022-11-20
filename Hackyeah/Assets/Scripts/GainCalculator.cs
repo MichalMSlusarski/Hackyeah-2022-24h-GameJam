@@ -20,7 +20,6 @@ public class GainCalculator : MonoBehaviour
         gain.Integer = 0;
         checkBordersHex = gameObject.GetComponent<CheckBordersHex>();
         CalculateGains();
-        canvas.SetActive(true);
         camera = Camera.main;
     }
 
