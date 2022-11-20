@@ -229,26 +229,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Karta-pleban
       objectReference: {fileID: 0}
-    - target: {fileID: 2173795045541175492, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: m_TagString
-      value: Card
-      objectReference: {fileID: 0}
-    - target: {fileID: 2173795045541175545, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d005cfb2b2f6c2f488f60891c1d1517b, type: 3}
-    - target: {fileID: 2173795045541175546, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: clickOnTile
-      value: 
-      objectReference: {fileID: 725599907}
-    - target: {fileID: 2173795045541175546, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: price
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2173795045541175546, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: thisBuildingIndex
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175547, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -307,7 +287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175547, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175547, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_AnchorMin.x
@@ -393,22 +373,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Karta-pleban
       objectReference: {fileID: 0}
-    - target: {fileID: 2173795045541175492, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: m_TagString
-      value: Card
-      objectReference: {fileID: 0}
-    - target: {fileID: 2173795045541175545, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 296d45807b020474791bcd3ff71165d4, type: 3}
-    - target: {fileID: 2173795045541175546, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: clickOnTile
-      value: 
-      objectReference: {fileID: 725599907}
-    - target: {fileID: 2173795045541175546, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: price
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175547, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -467,7 +431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175547, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175547, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_AnchorMin.x
@@ -511,26 +475,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Karta-pleban
       objectReference: {fileID: 0}
-    - target: {fileID: 2173795045541175492, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: m_TagString
-      value: Card
-      objectReference: {fileID: 0}
-    - target: {fileID: 2173795045541175545, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f58dc41bed4e0ea42b21be94c6934476, type: 3}
-    - target: {fileID: 2173795045541175546, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: clickOnTile
-      value: 
-      objectReference: {fileID: 725599907}
-    - target: {fileID: 2173795045541175546, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: price
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2173795045541175546, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: thisBuildingIndex
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175547, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -589,7 +533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175547, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175547, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_AnchorMin.x
@@ -629,10 +573,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1812983695}
     m_Modifications:
-    - target: {fileID: 2039809315786786822, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: m_EffectColor.a
-      value: 0.18431373
-      objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175492, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_Name
       value: Karta-pan
@@ -1609,10 +1549,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1140807245}
     m_Modifications:
-    - target: {fileID: 2039809315786786822, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: m_EffectColor.a
-      value: 0.18431373
-      objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175492, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_Name
       value: Karta-pan
@@ -2393,26 +2329,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Karta-pleban
       objectReference: {fileID: 0}
-    - target: {fileID: 2173795045541175492, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: m_TagString
-      value: Card
-      objectReference: {fileID: 0}
-    - target: {fileID: 2173795045541175545, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f58dc41bed4e0ea42b21be94c6934476, type: 3}
-    - target: {fileID: 2173795045541175546, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: clickOnTile
-      value: 
-      objectReference: {fileID: 725599907}
-    - target: {fileID: 2173795045541175546, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: price
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2173795045541175546, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: thisBuildingIndex
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175547, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2471,7 +2387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175547, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175547, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_AnchorMin.x
@@ -3164,10 +3080,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 573126701}
     m_Modifications:
-    - target: {fileID: 2039809315786786822, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: m_EffectColor.a
-      value: 0.18431373
-      objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175492, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_Name
       value: Karta-pan
@@ -3797,10 +3709,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1778905406}
     m_Modifications:
-    - target: {fileID: 2039809315786786822, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: m_EffectColor.a
-      value: 0.18431373
-      objectReference: {fileID: 0}
     - target: {fileID: 2173795045541175492, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
       propertyPath: m_Name
       value: Karta-pan
@@ -3889,10 +3797,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8363943803133417833, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f58dc41bed4e0ea42b21be94c6934476, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7930bba4b1c66fc4297e8ace37853458, type: 3}
 --- !u!114 &2685399230296943126
