@@ -6,7 +6,12 @@ using UnityEngine.UI;
 public class CardYeeter : MonoBehaviour
 {
     [SerializeField] ClickOnTile clickOnTile;
+    [SerializeField] SO_Integer panPlebanScore;
     [SerializeField] List<GameObject> activeChoices = new List<GameObject>();
+    [SerializeField] List<GameObject> PanEventList = new List<GameObject>();
+    [SerializeField] List<GameObject> PlebanEventList = new List<GameObject>();
+
+    int turn;
     
     void Start()
     {
@@ -16,8 +21,26 @@ public class CardYeeter : MonoBehaviour
     void Yeet()
     {
         Debug.Log("Yeet");
+        turn++;
         activeChoices[0].SetActive(false);
         activeChoices.RemoveAt(0);
+
+        if(turn >= 4)
+        {
+            EventMe();
+        }
+    }
+
+    void EventMe()
+    {
+        if(panPlebanScore.Integer >= 0)
+        {
+            PanEventList[0].SetActive(true);
+        }
+        else
+        {
+            PlebanEventList[0].SetActive(true);
+        }
     }
 
     void OnDestroy() 

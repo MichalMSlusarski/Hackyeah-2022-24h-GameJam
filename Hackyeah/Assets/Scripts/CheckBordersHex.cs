@@ -66,7 +66,7 @@ public class CheckBordersHex : MonoBehaviour
             
             if(hit.transform.name == "Obstacle")//else if(hit.transform.tag == "Finish")
             {
-                Debug.Log("Tower Connected");
+                Debug.Log("TConnected");
                 hit.transform.name = "Default";
                 //hit.transform.tag = "Untagged";
                 numberOfConnectedTowers.Integer++;
@@ -81,12 +81,6 @@ public class CheckBordersHex : MonoBehaviour
                     Debug.Log(transform.name + " " + rayTarget + " matched for bonus");
                     Debug.DrawRay(transform.position, rayTarget, Color.yellow, 1000f);
                     placable.AddPoint();
-                }
-                else if(hitPlacable.productType == placable.negativeForTileWithThisProductType)
-                {
-                    Debug.Log(transform.name + " " + rayTarget + " matched for bonus");
-                    Debug.DrawRay(transform.position, rayTarget, Color.blue, 1000f);
-                    placable.SubPoint();
                 }
             }
             }

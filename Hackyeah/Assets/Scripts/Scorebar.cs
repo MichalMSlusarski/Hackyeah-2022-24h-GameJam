@@ -5,17 +5,19 @@ using UnityEngine.UI;
 
 public class Scorebar : MonoBehaviour
 {
-    [SerializeField] Image scorebarPleban;
-    [SerializeField] Image scorebarPan;
     [SerializeField] SO_Integer panPlebanScore;
 
-    int maxScore = 5;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameObject plebanPoint_1;
+    [SerializeField] GameObject plebanPoint_2;
+    [SerializeField] GameObject plebanPoint_3;
+    [SerializeField] GameObject plebanPoint_4;
+
+    [SerializeField] GameObject panPoint_1;
+    [SerializeField] GameObject panPoint_2;
+    [SerializeField] GameObject panPoint_3;
+    [SerializeField] GameObject panPoint_4;
+
+    //int points = panPlebanScore.Integer;
 
     // Update is called once per frame
     void Update()
@@ -25,17 +27,46 @@ public class Scorebar : MonoBehaviour
 
     void CompareAndTranslate()
     {
-        if(panPlebanScore.Integer <= 0)
+        /*int points = panPlebanScore.Integer;
+        switch (points)
         {
-            float currentScore = (panPlebanScore.Integer / maxScore);
-            scorebarPan.fillAmount = currentScore;
-            Debug.Log(currentScore);
-        }
-        else if(panPlebanScore.Integer >= 0)
-        {
-            float currentScore = (panPlebanScore.Integer / maxScore) * -1;
-            scorebarPan.fillAmount = currentScore;
-            Debug.Log(currentScore);
-        }
+            case -4:
+            Console.WriteLine("Monday");
+            break;
+            case -3:
+            Console.WriteLine("Tuesday");
+            break;
+            case -2:
+            Console.WriteLine("Wednesday");
+            break;
+            case -1:
+            Console.WriteLine("Thursday");
+            break;
+            case 0:
+            Console.WriteLine("Friday");
+            break;
+            case 1:
+            Console.WriteLine("Saturday");
+            break;
+            case 2:
+            Console.WriteLine("Sunday");
+            break;
+            case 3:
+            Console.WriteLine("Sunday");
+            break;
+            case 4:
+            Console.WriteLine("Sunday");
+            break;
+        }*/
     }
+
+    /*void ResetAll()
+    {
+        plebanPoint_1
+        plebanPoint_2
+        plebanPoint_3
+        plebanPoint_4
+
+
+    }*/
 }

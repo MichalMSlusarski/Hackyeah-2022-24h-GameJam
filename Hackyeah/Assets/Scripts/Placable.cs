@@ -16,12 +16,13 @@ public class Placable : MonoBehaviour
 {
     public Products productType;
     public Products bonusForTileWithThisProductType; //1001
-    public Products negativeForTileWithThisProductType;
+    
+    [SerializeField] SO_Integer villagePoints;
     [SerializeField] SO_Integer productPoints;
     [SerializeField] SO_Integer currentPrice;
     bool productByTurn = false;
     public int bonusValue = 1;
-    public int negativeValue = -1;
+    
 
     void Start()
     {
@@ -46,11 +47,6 @@ public class Placable : MonoBehaviour
 
     public void AddPoint()
     {
-        if(productByTurn == false) {productPoints.Integer = productPoints.Integer + bonusValue;}
-    }
-
-    public void SubPoint()
-    {
-        if(productByTurn == false) {productPoints.Integer = productPoints.Integer + negativeValue;}
+        if(productByTurn == false) {villagePoints.Integer = villagePoints.Integer + bonusValue;}
     }
 }

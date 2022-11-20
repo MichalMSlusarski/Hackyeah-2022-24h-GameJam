@@ -66,10 +66,6 @@ public class GainCalculator : MonoBehaviour
                     
                     gain.Integer = gain.Integer + checkBordersHex.placable.bonusValue;// - currentPrice.Integer;
                 }
-                else if(hitPlacable.productType == checkBordersHex.placable.negativeForTileWithThisProductType)
-                {
-                    gain.Integer = gain.Integer + checkBordersHex.placable.negativeValue;// - currentPrice.Integer;
-                }
             } 
         }     
     }
