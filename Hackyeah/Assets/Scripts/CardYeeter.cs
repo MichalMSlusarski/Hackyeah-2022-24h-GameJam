@@ -7,6 +7,7 @@ public class CardYeeter : MonoBehaviour
 {
     [SerializeField] ClickOnTile clickOnTile;
     [SerializeField] SO_Integer panPlebanScore;
+    [SerializeField] int turnsToEvent;
     [SerializeField] List<GameObject> activeChoices = new List<GameObject>();
     [SerializeField] List<GameObject> PanEventList = new List<GameObject>();
     [SerializeField] List<GameObject> PlebanEventList = new List<GameObject>();
@@ -25,7 +26,7 @@ public class CardYeeter : MonoBehaviour
         activeChoices[0].SetActive(false);
         activeChoices.RemoveAt(0);
 
-        if(turn >= 3)
+        if(turn >= turnsToEvent)
         {
             EventMe();
         }

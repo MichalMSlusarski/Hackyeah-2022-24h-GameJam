@@ -30,7 +30,6 @@ public class TileCard : MonoBehaviour
     void Start()
     {
         ClickOnTile.OnCard += Deselect;       
-        //ClickOnTile.OnCard += AffordCheck;
     }
     
     public void Selected()
@@ -81,7 +80,6 @@ public class TileCard : MonoBehaviour
 
     public void Enter()
     {
-        clickOnTile.DestroyFollower(); //+ destroyMock
         clickOnTile.DestroyMock();
 
         gameObject.transform.DOScale(desiredSize, lerpTime);

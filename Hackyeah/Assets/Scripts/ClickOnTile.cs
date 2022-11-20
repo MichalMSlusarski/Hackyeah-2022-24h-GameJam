@@ -21,7 +21,6 @@ public class ClickOnTile : MonoBehaviour
     [Header("Prefabs")]
     [SerializeField] GameObject[] allPossibleBuildings;
     GameObject Building = null;
-    GameObject Follower = null;
 
     GameObject selectedTile;
     GameObject oldTile;
@@ -29,8 +28,6 @@ public class ClickOnTile : MonoBehaviour
     TileData oldTileData;
 
     Vector3 flooredPosition;
-
-    bool followerActive = false;
 
     void Update()
     {
@@ -47,14 +44,12 @@ public class ClickOnTile : MonoBehaviour
         if(Physics.Raycast(ray, out hit, 1000f, layerMask))
         {
             flooredPosition = new Vector3(hit.point.x, 0, hit.point.z);
-            if(Follower != null){Follower.transform.position = flooredPosition;}
             //Debug.Log(hit.transform.tag);
             
             if(isInBuildMode.boolvalue == true)
             {
                 if(hit.transform.tag == "Tiles")
                 {
-                    DestroyFollower();
                     selectedTile = hit.transform.gameObject;
                     tileData = selectedTile.GetComponent<TileData>();
                 
@@ -71,7 +66,7 @@ public class ClickOnTile : MonoBehaviour
                         }
                         else
                         {
-                            //CameraEnable();
+
                             Debug.Log("tile changed");
                             oldTileData.Deselcted();
                             oldTile = selectedTile;
@@ -79,7 +74,7 @@ public class ClickOnTile : MonoBehaviour
                     }
                     else
                     {
-                        //CameraEnable(); mobile
+
                         Debug.Log("tile changed from null");
                         DestroyMock();
                         oldTile = selectedTile;
@@ -87,58 +82,31 @@ public class ClickOnTile : MonoBehaviour
                 }
                 else if(hit.transform.tag == "Respawn")
                 {
-                    //CameraEnable(); //mobile
+
                     DestroyMock();
-                    DisplayFollower(flooredPosition);
+
                 }    
             }    
         }
         else
         {
-            //CameraEnable();
             DestroyMock();
-            DestroyFollower(); //mobile
         }
-        } //eventcheck
-    }
-
-    void DisplayFollower(Vector3 mousePosition)
-    {
-        if(followerActive == false)
-        {
-            Follower = Instantiate(allPossibleBuildings[CurrentBuildingIndex.Integer], mousePosition, Quaternion.identity) as GameObject;
-            //Follower.transform.SetParent(gameObject.transform);
-            Mockify(Follower);
-            followerActive = true;
         }
-    }
-
-    public void DestroyFollower()
-    {
-        Destroy(Follower);
-        followerActive = false;
-    }
-
-    public void CameraEnable()
-    {
-        //if(cameraControl.enabled == false) { cameraControl.enabled = true; }//mobile
     }
     
     void PlaceBuilding()
     {
-        //cameraControl.enabled = false; //disable camera on mobile
         DisplayMock();
-        //Debug.Log("Place building works"); //it does, but sometimes input get mouse button doesn't
+        Debug.Log("Mock Displayed");
 
-        if(/*touchInput.isTapped == true ||*/ Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0))
         {
             Debug.Log("Should place");
             InstantiatePrefab(Quaternion.Euler(0, RandomRotationValue(), 0), true);
             OnGetMouseButtonDown(false);
-            //mapManager.allPositions.Add(selectedTile.transform.position);
             DestroyMock();
             Destroy(selectedTile);
-            //cameraControl.enabled = true; //mobile
         }   
     }
 
@@ -189,7 +157,6 @@ public class ClickOnTile : MonoBehaviour
         oldTileData.Deselcted();
         isInBuildMode.boolvalue = false;
         tileData.isFreeToBuild = freetobuild;
-        //touchInput.isTapped = false;
         if(OnCard != null) {OnCard();}
     }
 
